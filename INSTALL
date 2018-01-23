@@ -1,0 +1,9 @@
+Building CrudeCoins
+
+See doc/readme-qt.rst for instructions on building CrudeCoins-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of CrudeCoins.
+
+See doc/build-*.txt for instructions on building crudecoinsd,
+the intended-for-services, no-graphical-interface, reference
+implementation of CrudeCoins.
