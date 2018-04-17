@@ -75,7 +75,10 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 http://162.253.124.192:3001/
 
 CrudeCoins addnode
-addnode=162.253.124.192
+162.253.124.192
+162.208.10.9
+162.208.8.133
+192.243.103.127
 
 How to Mine CrudeCoins
 
