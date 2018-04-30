@@ -1,7 +1,7 @@
 CrudeCoins integration/staging tree
 ================================
 
-http://www.crudecoins.net
+http://www.crudecoins.org
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 CrudeCoins Developers
@@ -19,7 +19,7 @@ The rest is the same as Bitcoin.
  - 2016 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the CrudeCoins client sofware, see http://www.crudecoins.net.
+the CrudeCoins client sofware, see http://www.crudecoins.org.
 
 License
 -------
@@ -45,7 +45,7 @@ match the project's coding conventions (see `doc/coding.txt`) or are
 controversial.
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/CrudeCoins/Source-Code) (https://github.com/crudecoins-project/crudecoins/tags) are created
+completely stable. [Tags](https://github.com/crudecoins-project/crudecoins/tags) are created
 regularly to indicate new official, stable release versions of CrudeCoins.
 
 Testing
@@ -70,43 +70,4 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
     qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
     make -f Makefile.test
     ./crudecoins-qt_test
-    
-    CRUDE COINS EXPLORER
-http://162.253.124.192:3001/
-
-CrudeCoins addnode
-162.253.124.192
-162.208.10.9
-162.208.8.133
-192.243.103.127
-
-How to Mine CrudeCoins
-
-Open your wallet, and make sure you are connected to another wallet. 
- You are connected if you see the icon Wallet Connections in the lower right corner of your wallet.
-
-The message "No block source available" will disappear once you mine your first block.
-
-Important: replace "examplecoin" with the name of your blockchain.
-
-Close your wallet and create the file examplecoin.conf in the folder "%APPDATA%\examplecoin\".
-
-Paste the following text into examplecoin.conf and save the file.
-rpcuser=rpc_crudecoins
-rpcpassword=69c863e3356d3dae95df454a1
-rpcallowip=127.0.0.1
-rpcport=4210
-listen=1
-server=1
-addnode=162.253.124.192
-
-Download the latest version of cpuminer and extract the zip file.
-
-Create a .bat file named mine.bat and paste the following text into mine.bat.
-minerd --url=http://127.0.0.1:4210 --userpass=rpc_crudecoins:69c863e3356d3dae95df454a1
-
-Save the file inside the extracted cpuminer folder.
-
-Open your wallet and execute mine.bat to start mining your first coins.
-    
 

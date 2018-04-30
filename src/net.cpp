@@ -1173,59 +1173,7 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"crudecoins.net", "162.208.10.9"}, {"crudecoins.net", "162.208.8.133"}, {"crudecoins.net", "192.243.103.127"}
-}
-
-#else
-void MapPort(bool)
-{
-    // Intentionally left blank.
-}
-#endif
-
-
-
-
-
-
-
-
-
-// DNS seeds
-// Each pair gives a source name and a seed name.
-// The first name is used as information source for addrman.
-// The second name should resolve to a list of seed addresses.
-static const char *strMainNetDNSSeed[][2] = {
-    {    }
-
-
-
-}
-
-#else
-void MapPort(bool)
-{
-    // Intentionally left blank.
-}
-#endif
-
-
-
-
-
-
-
-
-
-// DNS seeds
-// Each pair gives a source name and a seed name.
-// The first name is used as information source for addrman.
-// The second name should resolve to a list of seed addresses.
-static const char *strMainNetDNSSeed[][2] = {
-    {},
-
-
-
+    {"crudecoins.net", "162.208.10.9"}, {"crudecoins.net", "162.208.8.133"}, {"crudecoins.net", "192.243.103.127"},
     {NULL, NULL}
 };
 
@@ -1289,7 +1237,10 @@ void DumpAddresses()
     printf("Flushed %d addresses to peers.dat  %"PRI64d"ms\n",
            addrman.size(), GetTimeMillis() - nStart);
 }
-
+unsigned int pnSeed[] =
+{   
+00xA2D00A09, 0xA2D00885, 0xC0F3677F, 
+}
 void static ProcessOneShot()
 {
     string strDest;
