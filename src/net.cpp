@@ -1237,10 +1237,6 @@ void DumpAddresses()
     printf("Flushed %d addresses to peers.dat  %"PRI64d"ms\n",
            addrman.size(), GetTimeMillis() - nStart);
 }
-unsigned int pnSeed[] =
-{   
-00xA2D00A09, 0xA2D00885, 0xC0F3677F, 
-}
 void static ProcessOneShot()
 {
     string strDest;
